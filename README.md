@@ -17,13 +17,13 @@ There will be a set of vital monitors running. Each of these vital
 monitors will have an IP address. These vital monitors will be running on a server. Vital
 monitors will broadcast their identity to a specific UDP port in the following format:
 <ip_addr, port, monitor_id>.
-
+![image](https://user-images.githubusercontent.com/66522854/164972259-4afdeade-47cf-45f1-8004-7ef3f2a89dd2.png)
 ### Your tasks are as follows.
-
 1) Implement a gateway that discovers all of these vital monitors.
 2) For each discovered monitor, the gateway should initiate a TCP connection with
 the vital monitor. It should use the discovered port number and IP address for this
 connection. This TCP connection will be used to receive vital information and
 alarms from vital monitors.
+![image](https://user-images.githubusercontent.com/66522854/164972285-fd875613-7017-42d3-941a-0dc5ae2e6989.png)
 3) Consider thread synchronization where appropriate and implement thread
 synchronizations in your gateway implementation.
